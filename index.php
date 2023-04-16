@@ -7,19 +7,16 @@
     <link rel="stylesheet" href="npm i bootstrap-icons">
     <title>PHP CRUD</title>
 </head>
-<body class="bg-secondary">
-<nav class="navbar bg-body-tertiary" class="bg-secondary">
+<body class="bg-secondary text-white">
+<nav class="navbar bg-dark-subtle text-emphasis-dark">
   <div class="container-fluid">
-    <span class="navbar-text">
-    <h2>CRUD DATA MAHASISWA</h2>
-    <br/>
-    </span>
+    <span class="navbar-brand mb-0 h1">DATA MAHASISWA</span>
   </div>
 </nav>
-    <a href="tambah.php">+ TAMBAH MAHASISWA</a>
+<a href="tambah.php"><button type="button" class="btn btn-dark">TAMBAH MAHASISWA</button></a>
     <br/>
     <br/>   
-    <table border="1" class="table table-strip  ed table-dark">
+    <table border="1" class="table table-strip  ed table-secondary">
         <tr>
             <th>No</th>
             <th>Nama</th>
@@ -53,8 +50,8 @@
                 <td><?php echo $d['hobi']; ?></td>
                 <td><?php echo $d['matkul']; ?></td>
                 <td>
-                    <a href="edit.php?id=<?php echo $d['id']; ?>">EDIT</a>
-                    <a href="hapus.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+                <a href="edit.php?id=<?php echo $d['id']; ?>"><button type="button" class="btn btn-secondary">EDIT</button></a>
+                <a href="hapus.php?id=<?php echo $d['id']; ?>"><button type="button" class="btn btn-secondary">HAPUS</button></a>
                 </td>
         </tr>
         <?php

@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <title>EDIT CRUD</title>
 </head>
-<body>
-    <h2>MENU EDIT DATA</h2>
+<body class="bg-secondary text-white">
+<nav class="navbar bg-dark-subtle text-emphasis-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">DATA MAHASISWA</span>
+  </div>
+</nav>
+    <a href="index.php"><button type="button" class="btn btn-dark">Kembali</button></a>
     <br/>
-    <a href="index.php">MENU UTAMA</a>
     <br/>
-    <br/>
-    <h1>Edit DATA Mahasiswa</h1>
+    <h1>Edit Data Mahasiswa</h1>
     <?php
     include 'koneksi.php';
     $id=$_GET['id'];
@@ -84,7 +88,7 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" value="SIMPAN"></td>
+            <td><input type="submit" class="btn btn-dark" value="SIMPAN"></td>
         </tr>
     </table>
     </form>

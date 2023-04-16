@@ -3,12 +3,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <title>Tambah CRUD</title>
 </head>
-<body>
-    <h2>MENU CREATE DATA BARU</h2>
-    <br/>
-    <a href="index.php">MENU UTAMA</a>
+<body class="bg-secondary text-white">
+<nav class="navbar bg-dark-subtle text-emphasis-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">DATA MAHASISWA</span>
+  </div>
+</nav>
+    <a href="index.php"><button type="button" class="btn btn-dark">Kembali</button></a>
     <br/>
     <br/>
     <h1>Tambah Data Mahasiswa</h1>
@@ -56,7 +60,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="MASUKAN"></td>
+                <td><input type="submit" class="btn btn-dark" value="MASUKAN"></td>
             </tr>
         </table>
     </form>
